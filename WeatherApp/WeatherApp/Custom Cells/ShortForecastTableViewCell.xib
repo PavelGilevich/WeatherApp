@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ShortForecastCell" rowHeight="70" id="Pdj-W7-IMc" customClass="ShortForecastTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pdj-W7-IMc" id="Hoj-bt-rFn">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVd-4V-hd6">
+                        <rect key="frame" x="0.0" y="5" width="65" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Date">
+                                <attributes>
+                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Main" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCy-vf-N1s">
+                        <rect key="frame" x="0.0" y="39" width="65" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="8jP-yz-1C9"/>
+                            <constraint firstAttribute="height" constant="21" id="uFs-Uu-lwt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQo-2q-SrC">
+                        <rect key="frame" x="60" y="23" width="169" height="26"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUg-jM-Gyf">
+                        <rect key="frame" x="237" y="10" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="FGI-ZN-puQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qQo-2q-SrC" secondAttribute="bottom" constant="20" symbolic="YES" id="2Fb-3b-dU1"/>
+                    <constraint firstItem="sUg-jM-Gyf" firstAttribute="leading" secondItem="qQo-2q-SrC" secondAttribute="trailing" constant="8" symbolic="YES" id="B38-FK-0ZB"/>
+                    <constraint firstItem="oVd-4V-hd6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hoj-bt-rFn" secondAttribute="leading" constant="7" id="GgX-c7-TcR"/>
+                    <constraint firstItem="jCy-vf-N1s" firstAttribute="top" secondItem="oVd-4V-hd6" secondAttribute="bottom" constant="13" id="Kse-Sc-ht3"/>
+                    <constraint firstAttribute="bottom" secondItem="sUg-jM-Gyf" secondAttribute="bottom" constant="9" id="MAx-6h-vBf"/>
+                    <constraint firstItem="sUg-jM-Gyf" firstAttribute="top" secondItem="Hoj-bt-rFn" secondAttribute="top" constant="10" id="QaQ-gC-EGV"/>
+                    <constraint firstItem="sUg-jM-Gyf" firstAttribute="bottom" secondItem="jCy-vf-N1s" secondAttribute="bottom" id="RDE-CZ-Bf8"/>
+                    <constraint firstAttribute="trailing" secondItem="sUg-jM-Gyf" secondAttribute="trailing" constant="10" id="Rgh-Pu-6Eb"/>
+                    <constraint firstItem="jCy-vf-N1s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Hoj-bt-rFn" secondAttribute="leading" constant="7" id="VRG-iL-AZw"/>
+                    <constraint firstItem="jCy-vf-N1s" firstAttribute="trailing" secondItem="oVd-4V-hd6" secondAttribute="trailing" id="hcJ-qJ-dxx"/>
+                    <constraint firstItem="qQo-2q-SrC" firstAttribute="top" secondItem="Hoj-bt-rFn" secondAttribute="top" constant="23" id="mur-oj-5Tc"/>
+                    <constraint firstItem="qQo-2q-SrC" firstAttribute="leading" secondItem="Hoj-bt-rFn" secondAttribute="leading" constant="60" id="vqq-zm-E8U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="oVd-4V-hd6" id="h7c-2J-B3n"/>
+                <outlet property="descriptionLabel" destination="qQo-2q-SrC" id="b0G-ng-Jse"/>
+                <outlet property="mainWeatherLabel" destination="jCy-vf-N1s" id="Yf3-Bo-teq"/>
+                <outlet property="weatherImageView" destination="sUg-jM-Gyf" id="v15-Sd-M1Z"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
